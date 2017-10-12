@@ -19,7 +19,7 @@ def hello():
            "<b>Hostname:</b> {hostname}<br/>" \
            "<b>Visits:</b> {visits}<br/>" \
            "<b>help:</b> this should work right {cc}?" 
-    return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits, cc=os.getenv("NAME","compc"))
+    return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits, cc=os.getenv("COMP","compc" ))
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
