@@ -17,7 +17,7 @@ def hello():
 
     html = "<h3>Hello {name}!</h3>" \
            "<b>Hostname:</b> {hostname} <br/>" \
-           "<b>Visits:</b> {visits}<br/>" \
+           "<b>Visits:</b> {visits} <br/>" \
            "<b>help:</b> this should work right {cc}? ...I hope...sooooo....another test..." 
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits, cc=os.getenv("COMP","compc" ))
 
